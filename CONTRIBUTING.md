@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd ember-simple-state-helper`
+* `cd ember-simple-track-helper`
 * `npm install`
 
 ## Linting
