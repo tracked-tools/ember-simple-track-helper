@@ -7,7 +7,7 @@ Useful for scenarios where the *only* reason to have a backing class is to host 
 
 ```hbs
 {{#let (track false) as |toggle|}}
-  {{unless toggle.value}}
+  {{#unless toggle.value}}
     <button {{on "click" (fn toggle.update true)}}>Show it!</button>
   {{/unless}}
   <MyModal
