@@ -52,7 +52,7 @@
     "@types/htmlbars-inline-precompile": "^1.0.1",
     "@types/qunit": "^2.11.1",
     "@types/rsvp": "^4.0.3",
-    "@typescript-eslint/parser": "^4.25.0",
+    "@typescript-eslint/parser": "^5.3.1",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^1.11.2",
