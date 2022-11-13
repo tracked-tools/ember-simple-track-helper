@@ -39,6 +39,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install --frozen-lockfile --non-interactive
       - run: yarn ember test
+        working-directory: test-app
 
   tests_other:
     needs: lint
@@ -54,6 +55,7 @@ jobs:
       - uses: volta-cli/action@v4
       - run: yarn install --frozen-lockfile --non-interactive
       - run: yarn ember test
+        working-directory: test-app
 
   tests_ember_compat:
     needs: [lint, tests_linux]
@@ -71,6 +73,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - run: yarn install --frozen-lockfile --non-interactive
       - run: yarn ember try:one ember-${{ matrix.ember-version }}
+        working-directory: test-app
 
   tests_ts_compat:
     needs: lint
@@ -86,3 +89,4 @@ jobs:
       - uses: volta-cli/action@v4
       - run: yarn install --frozen-lockfile --non-interactive
       - run: './node_modules/.bin/ember try:one ts-${{ matrix.ts-version }}'
+        working-directory: test-app
