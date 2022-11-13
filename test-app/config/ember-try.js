@@ -2,37 +2,23 @@
 
 const getChannelURL = require('ember-source-channel-url');
 const { embroiderSafe, embroiderOptimized } = require('@embroider/test-setup');
-const typeTests = require('./ember-try-typescript');
-
-const typeScriptScenarios = typeTests.scenarios.map((s) => ({
-  ...s,
-  command: typeTests.command,
-}));
 
 module.exports = async function () {
   return {
     scenarios: [
       {
-        name: 'ember-lts-3.16',
+        name: 'ember-lts-3.28',
         npm: {
           devDependencies: {
-            'ember-source': '~3.16.0',
+            'ember-source': '~3.28.0',
           },
         },
       },
       {
-        name: 'ember-lts-3.20',
+        name: 'ember-lts-4.4',
         npm: {
           devDependencies: {
-            'ember-source': '~3.20.5',
-          },
-        },
-      },
-      {
-        name: 'ember-lts-3.24',
-        npm: {
-          devDependencies: {
-            'ember-source': '~3.24.4',
+            'ember-source': '~4.4.0',
           },
         },
       },
@@ -61,19 +47,6 @@ module.exports = async function () {
         },
       },
       {
-        name: 'ember-default-with-jquery',
-        env: {
-          EMBER_OPTIONAL_FEATURES: JSON.stringify({
-            'jquery-integration': true,
-          }),
-        },
-        npm: {
-          devDependencies: {
-            '@ember/jquery': '^1.1.0',
-          },
-        },
-      },
-      {
         name: 'ember-classic',
         env: {
           EMBER_OPTIONAL_FEATURES: JSON.stringify({
@@ -83,6 +56,9 @@ module.exports = async function () {
           }),
         },
         npm: {
+          devDependencies: {
+            'ember-source': '~3.28.0',
+          },
           ember: {
             edition: 'classic',
           },
@@ -90,11 +66,6 @@ module.exports = async function () {
       },
       embroiderSafe(),
       embroiderOptimized(),
-
-      // Include the type tests, while still leaving them in their own file so
-      // they can be run independently, for example to run all the type tests but
-      // *only* the type tests locally.
-      ...typeScriptScenarios,
     ],
   };
 };

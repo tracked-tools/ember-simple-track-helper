@@ -23,7 +23,7 @@ Useful for scenarios where the *only* reason to have a backing class is to host 
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.16 or above
+* Ember.js v3.28 or above
 * Ember CLI v2.13 or above
 * Node.js v14 or above
 
@@ -31,7 +31,7 @@ Compatibility
 
 This project follows the current draft of [the Semantic Versioning for TypeScript Types][semver] proposal.
 
-- **Currently supported TypeScript versions:** v4.1, v4.2, and v4.3
+- **Currently supported TypeScript versions:** v4.3 - v4.8
 - **Compiler support policy:** [simple majors][sm]
 - **Public API:** all published types not in a `-private` module are public
 
