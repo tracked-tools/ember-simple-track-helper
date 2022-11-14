@@ -10,11 +10,13 @@
     "url": "https://v5.chriskrycho.com/"
   },
   "workspaces": [
+    "ember-simple-track-helper",
     "test-app"
   ],
   "scripts": {
     "lint": "yarn workspaces run lint",
     "lint:fix": "yarn workspaces run lint:fix",
+    "prepare": "cd ember-simple-track-helper && yarn build",
     "release": "release-it",
     "test": "cd test-app && yarn test:ember"
   },
@@ -55,7 +57,9 @@
       "tagName": "v${version}"
     },
     "github": {
-      "release": true
-    }
+      "release": true,
+      "tokenRef": "GITHUB_AUTH"
+    },
+    "npm": false
   }
 }
