@@ -1,15 +1,7 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { click, render } from '@ember/test-helpers';
-import hbs from 'htmlbars-inline-precompile';
-import { expectTypeOf } from 'expect-type';
-import { State } from 'ember-simple-track-helper/helpers/track';
-
-expectTypeOf<State<string>>().toHaveProperty('value');
-expectTypeOf<State<string>['value']>().toEqualTypeOf<string>();
-expectTypeOf<State<string>>().toHaveProperty('update');
-expectTypeOf<State<string>['update']>().parameters.toEqualTypeOf<[string]>();
-expectTypeOf<State<string>['update']>().returns.toEqualTypeOf<void>();
+import { hbs } from 'ember-cli-htmlbars';
 
 module('Integration | Helper | track', function (hooks) {
   setupRenderingTest(hooks);

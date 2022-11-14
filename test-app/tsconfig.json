@@ -7,24 +7,11 @@
     // work with TypeScript.
     "baseUrl": ".",
     "paths": {
-      "dummy/tests/*": [
+      "test-app/tests/*": [
         "tests/*"
       ],
-      "dummy/*": [
-        "tests/dummy/app/*",
+      "test-app/*": [
         "app/*"
-      ],
-      "ember-simple-track-helper": [
-        "addon"
-      ],
-      "ember-simple-track-helper/*": [
-        "addon/*"
-      ],
-      "ember-simple-track-helper/test-support": [
-        "addon-test-support"
-      ],
-      "ember-simple-track-helper/test-support/*": [
-        "addon-test-support/*"
       ],
       "*": [
         "types/*"
@@ -33,10 +20,7 @@
   },
   "include": [
     "app/**/*",
-    "addon/**/*",
     "tests/**/*",
-    "types/**/*",
-    "test-support/**/*",
-    "addon-test-support/**/*"
+    "types/**/*"
   ]
 }

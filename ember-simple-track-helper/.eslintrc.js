@@ -21,8 +21,9 @@ module.exports = {
     browser: true,
   },
   rules: {
-    // TS handles this for us.
-    'no-unused-vars': ['off'],
+    // This mostly bans `object`, which is correct in general, but we actually
+    // need in a couple key places for destroyables handling!
+    '@typescript-eslint/ban-types': 'off',
   },
   overrides: [
     // node files
@@ -30,13 +31,9 @@ module.exports = {
       files: [
         './.eslintrc.js',
         './.prettierrc.js',
-        './.template-lintrc.js',
-        './ember-cli-build.js',
-        './testem.js',
-        './blueprints/*/index.js',
+        './addon-main.js',
         './config/**/*.js',
-        './lib/*/index.js',
-        './server/**/*.js',
+        './rollup.config.js',
       ],
       parserOptions: {
         sourceType: 'script',
@@ -50,15 +47,7 @@ module.exports = {
       rules: {
         // We *want* to use traditional require statements in Node `.js` files.
         '@typescript-eslint/no-var-requires': 'off',
-        // this can be removed once the following is fixed
-        // https://github.com/mysticatea/eslint-plugin-node/issues/77
-        'node/no-unpublished-require': 'off',
       },
-    },
-    {
-      // test files
-      files: ['tests/**/*-test.{js,ts}'],
-      extends: ['plugin:qunit/recommended'],
     },
   ],
 };
