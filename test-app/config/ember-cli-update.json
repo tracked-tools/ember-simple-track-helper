@@ -12,6 +12,7 @@
           "isBaseBlueprint": true,
           "options": [
             "--yarn",
+            "--no-welcome",
             "--ci-provider=github"
           ]
         }

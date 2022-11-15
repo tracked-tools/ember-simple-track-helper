@@ -38,10 +38,10 @@
     },
     "plugins": {
       "@release-it-plugins/lerna-changelog": {
-        "infile": "CHANGELOG.md"
+        "infile": "CHANGELOG.md",
+        "launchEditor": false
       },
       "@release-it-plugins/workspaces": {
-        "publish": true,
         "workspaces": [
           "ember-simple-track-helper"
         ],
@@ -49,7 +49,10 @@
           "dependencyUpdates": [
             "test-app/package.json"
           ],
-          "versionUpdates": []
+          "versionUpdates": [
+            "package.json",
+            "test-app/package.json"
+          ]
         }
       }
     },
@@ -58,6 +61,7 @@
     },
     "github": {
       "release": true,
+      "releaseName": "v${version}",
       "tokenRef": "GITHUB_AUTH"
     },
     "npm": false
