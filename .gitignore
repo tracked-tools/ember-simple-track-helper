@@ -7,6 +7,6 @@ dist/
 node_modules/
 
 # misc
-/.env*
+.env*
 .eslintcache
 yarn-error.log

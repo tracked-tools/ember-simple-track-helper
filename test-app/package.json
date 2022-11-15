@@ -18,13 +18,10 @@
     "lint:hbs:fix": "ember-template-lint . --fix",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
-    "lint:tsc": "tsc --noEmit",
     "start": "ember serve",
     "test": "npm-run-all --print-name \"lint\" \"test:*\"",
     "test:ember": "ember test",
-    "test:watch": "ember test --server",
-    "prepack": "ember ts:precompile",
-    "postpack": "ember ts:clean"
+    "test:watch": "ember test --server"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
@@ -57,7 +54,7 @@
     "@types/ember__utils": "^4.0.2",
     "@types/qunit": "^2.19.3",
     "@types/rsvp": "^4.0.4",
-    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-auto-import": "^2.4.3",

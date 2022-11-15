@@ -1,9 +1,4 @@
 {
   "extends": "../tsconfig.json",
-  "compilerOptions": {
-    "paths": {
-      "@ember/destroyable": ["../node_modules/ember-destroyable-polyfill"]
-    }
-  },
   "include": ["./track-test.ts"]
 }
