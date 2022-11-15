@@ -1,6 +1,6 @@
 {
   "name": "ember-simple-track-helper",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A tiny helper to make small pieces of tracked state in Ember templates.",
   "keywords": [
     "ember-addon",
