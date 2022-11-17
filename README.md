@@ -60,7 +60,7 @@ This project ships [Glint](https://github.com/typed-ember/glint) types,
  }
  ```
 
- > Note that Glint itself is still under active development, and as such breaking changes might occur.
+ > **Note:** Glint itself is still under active development, and as such breaking changes might occur.
  > Therefore, Glint support by this addon is also considered experimental, and not covered by our SemVer contract!
 
 Installation
