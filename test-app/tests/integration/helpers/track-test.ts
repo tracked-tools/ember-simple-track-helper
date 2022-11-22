@@ -11,9 +11,9 @@ module('Integration | Helper | track', function (hooks) {
 
     await render(hbs`
       {{#let (track 0) as |state|}}
-        <button data-down {{on "click" (fn state.update (minus state.value 1))}}>&minus</button>
+        <button type="button" data-down {{on "click" (fn state.update (minus state.value 1))}}>&minus</button>
         <span data-value>{{state.value}}</span>
-        <button data-up {{on "click" (fn state.update (plus state.value 1))}}>&minus;</button>
+        <button type="button" data-up {{on "click" (fn state.update (plus state.value 1))}}>&plus;</button>
       {{/let}}
     `);
 
