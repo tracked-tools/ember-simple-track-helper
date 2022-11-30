@@ -5613,10 +5613,10 @@ eslint-plugin-prettier@^4.2.1:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-qunit@^7.3.2:
-  version "7.3.2"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-qunit/-/eslint-plugin-qunit-7.3.2.tgz#8a42d5e6c9512f2522381c54980efc7848eace67"
-  integrity sha512-nlG1bfXIPo9DZnF117A2vwz3g3vfDB3E8oxswaLjYXKpnklIBCoUn9XoZHyy7IBbAXkyCYPj4p7tcUw+u/p4+A==
+eslint-plugin-qunit@^7.3.4:
+  version "7.3.4"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-qunit/-/eslint-plugin-qunit-7.3.4.tgz#2465b6f29ff56fbe9b741bde2740dec109ee9bec"
+  integrity sha512-EbDM0zJerH9zVdUswMJpcFF7wrrpvsGuYfNexUpa5hZkkdFhaFcX+yD+RSK4Nrauw4psMGlcqeWUMhaVo+Manw==
   dependencies:
     eslint-utils "^3.0.0"
     requireindex "^1.2.0"
