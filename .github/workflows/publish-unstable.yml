@@ -33,9 +33,9 @@ jobs:
 
       - name: set version
         run: npm version --no-git-tag-version --workspaces-update=false `node -e "console.log(require('./package.json').version)"`-unstable.`git rev-parse --short HEAD`
-        working-directory: ember-async-data
+        working-directory: ember-simple-track-helper
 
       - name: npm publish
-        run: npm publish --tag=unstable --verbose --workspace=ember-async-data
+        run: npm publish --tag=unstable --verbose --workspace=ember-simple-track-helper
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
