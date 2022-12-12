@@ -36,8 +36,8 @@ This project follows the current draft of [the Semantic Versioning for TypeScrip
 - **Compiler support policy:** [simple majors][sm]
 - **Public API:** all published types not in a `-private` module are public
 
-[semver]: https://github.com/chriskrycho/ember-rfcs/blob/semver-for-ts/text/0730-semver-for-ts.md
-[sm]: https://github.com/chriskrycho/ember-rfcs/blob/semver-for-ts/text/0730-semver-for-ts.md#simple-majors
+[semver]: https://github.com/tracked-tools/ember-rfcs/blob/semver-for-ts/text/0730-semver-for-ts.md
+[sm]: https://github.com/tracked-tools/ember-rfcs/blob/semver-for-ts/text/0730-semver-for-ts.md#simple-majors
 
 This project ships [Glint](https://github.com/typed-ember/glint) types,
  which allow you when using TypeScript to get strict type checking in your templates.
