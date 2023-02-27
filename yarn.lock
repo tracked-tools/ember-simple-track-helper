@@ -1461,7 +1461,7 @@
     "@jridgewell/gen-mapping" "^0.3.0"
     "@jridgewell/trace-mapping" "^0.3.9"
 
-"@jridgewell/sourcemap-codec@1.4.14", "@jridgewell/sourcemap-codec@^1.4.10":
+"@jridgewell/sourcemap-codec@1.4.14", "@jridgewell/sourcemap-codec@^1.4.10", "@jridgewell/sourcemap-codec@^1.4.13":
   version "1.4.14"
   resolved "https://registry.yarnpkg.com/@jridgewell/sourcemap-codec/-/sourcemap-codec-1.4.14.tgz#add4c98d341472a289190b424efbdb096991bb24"
   integrity sha512-XPSJHWmi394fuUuzDnGz1wiKqWfo1yXecHQMRf2l6hztTO+nPru658AyDngaBe7isIxEkRsPR3FZh+s7iVa4Uw==
@@ -5235,10 +5235,10 @@ ember-source@~4.9.3:
     semver "^7.3.7"
     silent-error "^1.1.1"
 
-ember-template-imports@^3.1.1, ember-template-imports@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/ember-template-imports/-/ember-template-imports-3.4.0.tgz#c40757e2d41e289ce08c0fe80671000bf216e0ef"
-  integrity sha512-3Cwcj3NXA129g3ZhmrQ/nYOxksFonTmB/qxyaSNTHrLBSoc93UZys47hBz13DlcfoeSCCrNt2Qpq1j890I04PQ==
+ember-template-imports@^3.4.0, ember-template-imports@^3.4.1:
+  version "3.4.1"
+  resolved "https://registry.yarnpkg.com/ember-template-imports/-/ember-template-imports-3.4.1.tgz#bd400ddda2c2cad35ded53b35da1c0972452cde8"
+  integrity sha512-KXnBFTAVxCfXnSCUgd/iuic9ajWbmFkRUBEeorJAMqxvougsPoK22s5ygE9O3GnzYdPpMwn+8v+/NAGy8HRBGA==
   dependencies:
     babel-import-util "^0.2.0"
     broccoli-stew "^3.0.0"
@@ -5552,20 +5552,21 @@ eslint-formatter-kakoune@^1.0.0:
   resolved "https://registry.yarnpkg.com/eslint-formatter-kakoune/-/eslint-formatter-kakoune-1.0.0.tgz#a95cc4fe1fbc06b84e0f2397e83f5f0b68340125"
   integrity sha512-Uk/TVLt6Nf6Xoz7C1iYuZjOSdJxe5aaauGRke8JhKeJwD66Y61/pY2FjtLP04Ooq9PwV34bzrkKkU2UZ5FtDRA==
 
-eslint-plugin-ember@^11.2.1:
-  version "11.2.1"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-11.2.1.tgz#be94b1c348ffc7c3dc5cd0106e6c50f69914a48c"
-  integrity sha512-CUC1ZHC2QBksBCMkl9GSCoKcC+IGPkSEhO6qc+R5pW0Llw44m4bEsxoVVNDpZNe/TQRiFmv3Lot9QdtygfAiIw==
+eslint-plugin-ember@^11.4.6:
+  version "11.4.6"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-ember/-/eslint-plugin-ember-11.4.6.tgz#75d4ba801c9e12c69cb3bbc32c6670f48c152ad0"
+  integrity sha512-ak+gDkZrOQUjpLYiDWJA1D2jWJy0MYTf409Ki6du06+vYNifuMJIFpJhH9oKsD1FPU1sQylzhHcOeiHfbQTWmA==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     "@glimmer/syntax" "^0.84.2"
     css-tree "^2.0.4"
     ember-rfc176-data "^0.3.15"
-    ember-template-imports "^3.1.1"
+    ember-template-imports "^3.4.1"
     eslint-utils "^3.0.0"
     estraverse "^5.2.0"
+    lodash.camelcase "^4.1.1"
     lodash.kebabcase "^4.1.1"
-    magic-string "^0.26.7"
+    magic-string "^0.27.0"
     requireindex "^1.2.0"
     snake-case "^3.0.3"
 
@@ -8231,6 +8232,11 @@ lodash.assignin@^4.1.0:
   resolved "https://registry.yarnpkg.com/lodash.assignin/-/lodash.assignin-4.2.0.tgz#ba8df5fb841eb0a3e8044232b0e263a8dc6a28a2"
   integrity sha512-yX/rx6d/UTVh7sSVWVSIMjfnz95evAgDFdb1ZozC35I9mSFCkmzptOzevxjgbQUsc78NR44LVHWjsoMQXy9FDg==
 
+lodash.camelcase@^4.1.1:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
+  integrity sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==
+
 lodash.castarray@^4.4.0:
   version "4.4.0"
   resolved "https://registry.yarnpkg.com/lodash.castarray/-/lodash.castarray-4.4.0.tgz#c02513515e309daddd4c24c60cfddcf5976d9115"
@@ -8421,12 +8427,19 @@ magic-string@^0.25.7:
   dependencies:
     sourcemap-codec "^1.4.8"
 
-magic-string@^0.26.0, magic-string@^0.26.2, magic-string@^0.26.7:
+magic-string@^0.26.0, magic-string@^0.26.2:
   version "0.26.7"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.26.7.tgz#caf7daf61b34e9982f8228c4527474dac8981d6f"
   integrity sha512-hX9XH3ziStPoPhJxLq1syWuZMxbDvGNbVchfrdCtanC7D13888bMFow61x8axrx+GfHLtVeAx2kxL7tTGRl+Ow==
   dependencies:
     sourcemap-codec "^1.4.8"
+
+magic-string@^0.27.0:
+  version "0.27.0"
+  resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.27.0.tgz#e4a3413b4bab6d98d2becffd48b4a257effdbbf3"
+  integrity sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==
+  dependencies:
+    "@jridgewell/sourcemap-codec" "^1.4.13"
 
 make-dir@^3.0.0, make-dir@^3.0.2, make-dir@^3.1.0:
   version "3.1.0"
