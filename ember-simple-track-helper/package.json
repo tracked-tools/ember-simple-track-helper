@@ -72,7 +72,7 @@
     "@types/ember__test": "^4.0.0",
     "@types/ember__utils": "^4.0.0",
     "@typescript-eslint/eslint-plugin": "^5.57.0",
-    "@typescript-eslint/parser": "^5.54.1",
+    "@typescript-eslint/parser": "^5.57.1",
     "concurrently": "^7.6.0",
     "ember-cli-htmlbars": "^6.2.0",
     "eslint": "^8.36.0",
