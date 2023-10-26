@@ -1153,12 +1153,12 @@
     walk-sync "^3.0.0"
     yargs "^17.0.1"
 
-"@embroider/addon-shim@^1.8.4":
-  version "1.8.4"
-  resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-1.8.4.tgz#0e7f32c5506bf0f3eb0840506e31c36c7053763c"
-  integrity sha512-sFhfWC0vI18KxVenmswQ/ShIvBg4juL8ubI+Q3NTSdkCTeaPQ/DIOUF6oR5DCQ8eO/TkIaw+kdG3FkTY6yNJqA==
+"@embroider/addon-shim@^1.8.3", "@embroider/addon-shim@^1.8.4":
+  version "1.8.6"
+  resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-1.8.6.tgz#b676991b4fa32c3a98dc7db7dc6cd655029c3f09"
+  integrity sha512-siC9kP78uucEbpDcVyxjkwa76pcs5rVzDVpWO4PDc9EAXRX+pzmUuSTLAK3GztUwx7/PWhz1BenAivqdSvSgfg==
   dependencies:
-    "@embroider/shared-internals" "^2.0.0"
+    "@embroider/shared-internals" "^2.2.3"
     broccoli-funnel "^3.0.8"
     semver "^7.3.8"
 
@@ -1234,7 +1234,7 @@
     semver "^7.3.5"
     typescript-memoize "^1.0.1"
 
-"@embroider/shared-internals@2.5.0":
+"@embroider/shared-internals@2.5.0", "@embroider/shared-internals@^2.2.3":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@embroider/shared-internals/-/shared-internals-2.5.0.tgz#4a0b5127c589718fae60fc22f81374ed558b944a"
   integrity sha512-7qzrb7GVIyNqeY0umxoeIvjDC+ay1b+wb2yCVuYTUYrFfLAkLEy9FNI3iWCi3RdQ9OFjgcAxAnwsAiPIMZZ3pQ==
@@ -4933,7 +4933,7 @@ ember-cli-babel-plugin-helpers@^1.0.0, ember-cli-babel-plugin-helpers@^1.1.1:
   resolved "https://registry.yarnpkg.com/ember-cli-babel-plugin-helpers/-/ember-cli-babel-plugin-helpers-1.1.1.tgz#5016b80cdef37036c4282eef2d863e1d73576879"
   integrity sha512-sKvOiPNHr5F/60NLd7SFzMpYPte/nnGkq/tMIfXejfKHIhaiIkYFqX8Z9UFTKWLLn+V7NOaby6niNPZUdvKCRw==
 
-ember-cli-babel@^7.0.0, ember-cli-babel@^7.13.0, ember-cli-babel@^7.13.2, ember-cli-babel@^7.22.1, ember-cli-babel@^7.23.0, ember-cli-babel@^7.23.1, ember-cli-babel@^7.26.10, ember-cli-babel@^7.26.11, ember-cli-babel@^7.26.3, ember-cli-babel@^7.26.6, ember-cli-babel@^7.7.3:
+ember-cli-babel@^7.0.0, ember-cli-babel@^7.13.0, ember-cli-babel@^7.13.2, ember-cli-babel@^7.22.1, ember-cli-babel@^7.23.0, ember-cli-babel@^7.23.1, ember-cli-babel@^7.26.11, ember-cli-babel@^7.26.3, ember-cli-babel@^7.26.6, ember-cli-babel@^7.7.3:
   version "7.26.11"
   resolved "https://registry.yarnpkg.com/ember-cli-babel/-/ember-cli-babel-7.26.11.tgz#50da0fe4dcd99aada499843940fec75076249a9f"
   integrity sha512-JJYeYjiz/JTn34q7F5DSOjkkZqy8qwFOOxXfE6pe9yEJqWGu4qErKxlz8I22JoVEQ/aBUO+OcKTpmctvykM9YA==
@@ -5164,7 +5164,7 @@ ember-cli-typescript@^2.0.2:
     stagehand "^1.0.0"
     walk-sync "^1.0.0"
 
-ember-cli-typescript@^5.1.0, ember-cli-typescript@^5.2.1:
+ember-cli-typescript@^5.2.1:
   version "5.2.1"
   resolved "https://registry.yarnpkg.com/ember-cli-typescript/-/ember-cli-typescript-5.2.1.tgz#553030f1ce3e8958b8e4fc34909acd1218cb35f2"
   integrity sha512-qqp5TAIuPHxHiGXJKL+78Euyhy0zSKQMovPh8sJpN/ZBYx0H90pONufHR3anaMcp1snVfx4B+mb9+7ijOik8ZA==
@@ -11893,13 +11893,12 @@ tr46@~0.0.3:
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
 
-tracked-built-ins@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/tracked-built-ins/-/tracked-built-ins-3.1.1.tgz#c16a1418d9c3b216527b1b40a2a80e293229359f"
-  integrity sha512-W8qLBxZzeC2zhEDdbPKi2GTffsiFn8PRbgal/2Fl6E/84CMvnpS6cPMmkvUmSLgKbqcAxl/RhyjWnhIZ9iPQjQ==
+tracked-built-ins@^3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/tracked-built-ins/-/tracked-built-ins-3.3.0.tgz#3c8d780550658fe180d0ec32754f1eef1966f2d9"
+  integrity sha512-ewKFrW/AQs05oLPM5isOUb/1aOwBRfHfmF408CCzTk21FLAhKrKVOP5Q5ebX+zCT4kvg81PGBGwrBiEGND1nWA==
   dependencies:
-    ember-cli-babel "^7.26.10"
-    ember-cli-typescript "^5.1.0"
+    "@embroider/addon-shim" "^1.8.3"
     ember-tracked-storage-polyfill "^1.0.0"
 
 tree-kill@^1.2.2:
