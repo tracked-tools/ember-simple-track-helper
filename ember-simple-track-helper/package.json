@@ -50,7 +50,7 @@
     "@babel/preset-typescript": "^7.21.0",
     "@embroider/addon-dev": "^4.1.1",
     "@glimmer/component": "^1.1.2",
-    "@glint/core": "^0.9.7",
+    "@glint/core": "^1.2.2",
     "@glint/environment-ember-loose": "^0.9.7",
     "@tsconfig/ember": "^2.0.0",
     "@types/ember": "^4.0.3",
