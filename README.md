@@ -24,14 +24,13 @@ Compatibility
 ------------------------------------------------------------------------------
 
 * Ember.js v3.28 or above
-* Ember CLI v2.13 or above
 * Embroider or ember-auto-import v2.0.0 or above (this is [v2 addon](https://emberjs.github.io/rfcs/0507-embroider-v2-package-format.html))
 
 ### TypeScript
 
 This project follows the current draft of [the Semantic Versioning for TypeScript Types][semver] proposal.
 
-- **Currently supported TypeScript versions:** v4.3 - v4.9
+- **Currently supported TypeScript versions:** v5.0 - v5.5
 - **Compiler support policy:** [simple majors][sm]
 - **Public API:** all published types not in a `-private` module are public
 
