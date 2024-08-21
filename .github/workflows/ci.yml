@@ -128,7 +128,7 @@ jobs:
       - run: pnpm add -D ${{ matrix.typescript-scenario }}
         working-directory: ember-simple-track-helper
 
-      - run: npx tsc --noEmit
+      - run: npx glint
         working-directory: ember-simple-track-helper
 
       - run: npx tsc --noEmit --project type-tests
