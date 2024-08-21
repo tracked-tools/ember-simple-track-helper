@@ -59,6 +59,7 @@ module.exports = {
       rules: {
         // We *want* to use traditional require statements in Node `.js` files.
         '@typescript-eslint/no-var-requires': 'off',
+        '@typescript-eslint/no-require-imports': 'off',
         // this can be removed once the following is fixed
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
         'node/no-unpublished-require': 'off',

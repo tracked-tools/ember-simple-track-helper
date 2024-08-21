@@ -17,11 +17,11 @@
     "test:ember": "pnpm --filter test-app test:ember"
   },
   "devDependencies": {
-    "@glint/core": "^1.2.1",
-    "@release-it-plugins/lerna-changelog": "^5.0.0",
-    "@release-it-plugins/workspaces": "^3.2.0",
-    "prettier-plugin-ember-template-tag": "^1.1.0",
-    "release-it": "^15.9.3"
+    "@glint/core": "^1.4.0",
+    "@release-it-plugins/lerna-changelog": "^7.0.0",
+    "@release-it-plugins/workspaces": "^4.2.0",
+    "prettier-plugin-ember-template-tag": "^2.0.2",
+    "release-it": "^17.6.0"
   },
   "volta": {
     "node": "18.20.4",
@@ -38,6 +38,7 @@
   },
   "release-it": {
     "hooks": {
+      "after:bump": "pnpm install",
       "before:init": "cp README.md LICENSE.md ember-simple-track-helper/"
     },
     "plugins": {
