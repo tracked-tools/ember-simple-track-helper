@@ -2,6 +2,9 @@
 
 ## v2.1.1 (2024-08-21)
 
+#### :memo: Documentation
+* [#142](https://github.com/tracked-tools/ember-simple-track-helper/pull/362) Update repository url for npm ([@SergeAstapov](https://github.com/SergeAstapov))
+
 ## v2.1.0 (2024-08-21)
 
 #### :rocket: Enhancement
