@@ -1,6 +1,6 @@
 {
   "private": true,
-  "repository": "https://github.com/chriskrycho/ember-simple-track-helper",
+  "repository": "https://github.com/tracked-tools/ember-simple-track-helper",
   "license": "MIT",
   "author": {
     "name": "Chris Krycho",

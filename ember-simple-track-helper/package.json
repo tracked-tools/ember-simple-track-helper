@@ -7,7 +7,7 @@
     "typescript",
     "autotracking"
   ],
-  "repository": "https://github.com/chriskrycho/ember-simple-track-helper",
+  "repository": "https://github.com/tracked-tools/ember-simple-track-helper",
   "license": "MIT",
   "author": "Chris Krycho <hello@chriskrycho.com>",
   "exports": {
