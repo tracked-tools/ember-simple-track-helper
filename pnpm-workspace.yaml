@@ -1,0 +1,3 @@
+packages:
+  - 'ember-simple-track-helper'
+  - 'test-app'

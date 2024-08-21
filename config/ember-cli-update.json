@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectName": "ember-simple-track-helper",
+  "packages": [
+    {
+      "name": "@embroider/addon-blueprint",
+      "version": "1.2.0",
+      "blueprints": [
+        {
+          "name": "@embroider/addon-blueprint",
+          "isBaseBlueprint": true,
+          "options": [
+            "--ci-provider=github",
+            "--pnpm",
+            "--release-it",
+            "--typescript"
+          ]
+        }
+      ]
+    }
+  ]
+}

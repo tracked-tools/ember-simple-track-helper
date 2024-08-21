@@ -9,4 +9,3 @@ node_modules/
 # misc
 .env*
 .eslintcache
-yarn-error.log

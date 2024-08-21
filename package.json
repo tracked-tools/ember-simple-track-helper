@@ -9,16 +9,12 @@
     "email": "hello@chriskrycho.com",
     "url": "https://v5.chriskrycho.com/"
   },
-  "workspaces": [
-    "ember-simple-track-helper",
-    "test-app"
-  ],
   "scripts": {
-    "lint": "yarn workspaces run lint",
-    "lint:fix": "yarn workspaces run lint:fix",
-    "prepare": "cd ember-simple-track-helper && yarn build",
+    "lint": "pnpm run -r lint",
+    "lint:fix": "pnpm run -r lint:fix",
+    "prepare": "pnpm run --filter=ember-simple-track-helper build",
     "release": "release-it",
-    "test": "cd test-app && yarn test:ember"
+    "test": "pnpm run --filter=test-app test:ember"
   },
   "devDependencies": {
     "@release-it-plugins/lerna-changelog": "^5.0.0",
@@ -27,8 +23,9 @@
   },
   "volta": {
     "node": "16.19.1",
-    "yarn": "1.22.19"
+    "pnpm": "9.7.1"
   },
+  "packageManager": "pnpm@9.7.1",
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
