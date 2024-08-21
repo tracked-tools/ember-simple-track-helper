@@ -19,6 +19,26 @@ Useful for scenarios where the *only* reason to have a backing class is to host 
 
 (For folks from outside Ember: it's just like `useState`, but via autotracking.)
 
+For usage in [Template Tag Format](https://guides.emberjs.com/release/components/template-tag-format/),
+this addon provides `track` named export:
+
+```gjs
+import { fn } from '@ember/helper';
+import { on } from '@ember/modifier';
+import { track } from 'ember-simple-track-helper';
+
+export default <template>
+  {{#let (track false) as |toggle|}}
+    {{#unless toggle.value}}
+      <button {{on "click" (fn toggle.update true)}}>Show it!</button>
+    {{/unless}}
+    <MyModal
+      @isShowing={{toggle.value}}
+      @onClose={{fn toggle.update false}}
+    />
+  {{/let}}
+</template>
+```
 
 Compatibility
 ------------------------------------------------------------------------------
