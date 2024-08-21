@@ -6,7 +6,7 @@ This repo is divided into multiple packages using Yarn workspaces:
 
 ## Installation
 
-- `git clone https://github.com/chriskrycho/ember-simple-track-helper.git`
+- `git clone https://github.com/tracked-tools/ember-simple-track-helper.git`
 - `cd ember-simple-track-helper`
 - `pnpm install`
 
