@@ -29,18 +29,12 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
-
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
-
-      - name: Lint Addon
-        run: pnpm run --filter=ember-simple-track-helper lint
-
-      - name: Lint Test App
-        run: pnpm run --filter=test-app lint
-
+      - name: Lint
+        run: pnpm lint
       - name: Run Tests
-        run: pnpm run --filter=test-app test:ember
+        run: pnpm test:ember
 
   floating:
     name: "Floating Dependencies"
@@ -56,17 +50,15 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
-
       - name: Install Dependencies
         run: pnpm install --no-lockfile
-
       - name: Run Tests
-        run: pnpm run --filter=test-app test:ember
+        run: pnpm test:ember
 
   try-scenarios:
     name: ${{ matrix.try-scenario }}
     runs-on: ubuntu-latest
-    needs: "test"
+    needs: 'test'
     timeout-minutes: 10
 
     strategy:
@@ -76,10 +68,12 @@ jobs:
           - ember-lts-3.28
           - ember-lts-4.4
           - ember-lts-4.8
+          - ember-lts-4.12
+          - ember-lts-5.4
+          - ember-lts-4.8
           - ember-release
           - ember-beta
           - ember-canary
-          - ember-classic
           - embroider-safe
           - embroider-optimized
 
@@ -92,12 +86,10 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
-
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
-
       - name: Run Tests
-        run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }}
+        run: ./node_modules/.bin/ember try:one ${{ matrix.try-scenario }} --skip-cleanup
         working-directory: test-app
 
   tests_ts:

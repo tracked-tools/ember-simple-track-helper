@@ -1,5 +1,5 @@
 import { expectTypeOf } from 'expect-type';
-import { State } from '../src/helpers/track';
+import { type State } from '../src/helpers/track.ts';
 
 expectTypeOf<State<string>>().toHaveProperty('value');
 expectTypeOf<State<string>['value']>().toEqualTypeOf<string>();
