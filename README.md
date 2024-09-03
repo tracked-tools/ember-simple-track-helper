@@ -88,6 +88,32 @@ Installation
 ember install ember-simple-track-helper
 ```
 
+Alternatives
+------------------------------------------------------------------------------
+
+### ember-resources' cell
+
+Docs: https://github.com/NullVoxPopuli/ember-resources/tree/main/docs
+Cell's docs: https://ember-resources.nullvoxpopuli.com/functions/cell.html
+
+```gjs
+import { cell } from 'ember-resources';
+import { on } from '@ember/modifier';
+
+<template>
+  {{#let (cell false) as |state|}}
+    {{#unless state.current}}
+      <button {{on "click" state.toggle}}>Show it!</button>
+    {{/unless}}
+
+    <MyModal
+      @isShowing={{state.current}}
+      @onClose={{state.toggle}}
+    />
+  {{/let}}
+</template>
+```
+
 
 Contributing
 ------------------------------------------------------------------------------
