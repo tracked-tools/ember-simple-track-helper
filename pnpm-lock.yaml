@@ -33,8 +33,8 @@ importers:
         specifier: ^1.8.7
         version: 1.8.9
       decorator-transforms:
-        specifier: ^2.0.0
-        version: 2.0.0(@babel/core@7.25.2)
+        specifier: ^2.1.0
+        version: 2.1.0(@babel/core@7.25.2)
     devDependencies:
       '@babel/core':
         specifier: ^7.24.4
@@ -784,12 +784,6 @@ packages:
 
   '@babel/plugin-syntax-class-static-block@7.14.5':
     resolution: {integrity: sha512-b+YyPmr6ldyNnM6sqYeMWE+bgJcJpO6yS4QD7ymxgH34GBPNDM/THBh8iunyvKIZztiwLH4CJZ0RxTk9emgpjw==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
-  '@babel/plugin-syntax-decorators@7.21.0':
-    resolution: {integrity: sha512-tIoPpGBR8UuM4++ccWN3gifhVvQu7ZizuR1fklhRJrd5ewgbkUS+0KVFeWWxELtn18NTLoW32XV7zyOgIAiz+w==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -3300,8 +3294,8 @@ packages:
     resolution: {integrity: sha512-aW35yZM6Bb/4oJlZncMH2LCoZtJXTRxES17vE3hoRiowU2kWHaJKFkSBDnDR+cm9J+9QhXmREyIfv0pji9ejCQ==}
     engines: {node: '>=10'}
 
-  decorator-transforms@2.0.0:
-    resolution: {integrity: sha512-ETfQccGcotK01YJsoB0AGTdUp7kS9jI93mBzrRY5Oyo+bOJfa2UKTSjCNf+iRNwAWBmBKlbiCcyL4tkY4C4dZQ==}
+  decorator-transforms@2.1.0:
+    resolution: {integrity: sha512-uK9qW64qViR7WD6m/qRFq0WzVMZLu5ylhgjsRZ0a2plCoUUs0MASnPjSL57uWKbmNZzN5bbOv04YaVY6DQYAwg==}
 
   deep-extend@0.6.0:
     resolution: {integrity: sha512-LOHxIOaPYdHlJRtCQfDIVZtfw/ufM8+rVj649RIHzcm/vGwQRXFt6OPqIFWsm2XEMrNIEtWR64sY1LEKD2vAOA==}
@@ -8144,11 +8138,6 @@ snapshots:
       '@babel/core': 7.25.2
       '@babel/helper-plugin-utils': 7.24.8
 
-  '@babel/plugin-syntax-decorators@7.21.0(@babel/core@7.25.2)':
-    dependencies:
-      '@babel/core': 7.25.2
-      '@babel/helper-plugin-utils': 7.24.8
-
   '@babel/plugin-syntax-decorators@7.24.7(@babel/core@7.25.2)':
     dependencies:
       '@babel/core': 7.25.2
@@ -8693,7 +8682,7 @@ snapshots:
       '@embroider/addon-shim': 1.8.9
       '@embroider/macros': 1.16.5(@glint/template@1.4.0)
       '@simple-dom/interface': 1.4.0
-      decorator-transforms: 2.0.0(@babel/core@7.25.2)
+      decorator-transforms: 2.1.0(@babel/core@7.25.2)
       dom-element-descriptors: 0.5.1
       ember-source: 5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0)
     transitivePeerDependencies:
@@ -11283,7 +11272,7 @@ snapshots:
     dependencies:
       mimic-response: 3.1.0
 
-  decorator-transforms@2.0.0(@babel/core@7.25.2):
+  decorator-transforms@2.1.0(@babel/core@7.25.2):
     dependencies:
       '@babel/plugin-syntax-decorators': 7.24.7(@babel/core@7.25.2)
       babel-import-util: 3.0.0
@@ -11888,7 +11877,7 @@ snapshots:
   ember-modifier@4.2.0(@babel/core@7.25.2)(ember-source@5.11.0(@glimmer/component@1.1.2(@babel/core@7.25.2))(@glint/template@1.4.0)(rsvp@4.8.5)(webpack@5.94.0)):
     dependencies:
       '@embroider/addon-shim': 1.8.9
-      decorator-transforms: 2.0.0(@babel/core@7.25.2)
+      decorator-transforms: 2.1.0(@babel/core@7.25.2)
       ember-cli-normalize-entity-name: 1.0.0
       ember-cli-string-utils: 1.1.0
     optionalDependencies:
@@ -15275,7 +15264,7 @@ snapshots:
   remove-types@1.0.0:
     dependencies:
       '@babel/core': 7.25.2
-      '@babel/plugin-syntax-decorators': 7.21.0(@babel/core@7.25.2)
+      '@babel/plugin-syntax-decorators': 7.24.7(@babel/core@7.25.2)
       '@babel/plugin-transform-typescript': 7.25.2(@babel/core@7.25.2)
       prettier: 2.8.7
     transitivePeerDependencies:
